@@ -23,6 +23,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 29
+    def lifecycle_version = "2.2.0
 
     defaultConfig {
         minSdkVersion 16
@@ -34,6 +35,7 @@ android {
 
     dependencies {
         implementation "androidx.annotation:annotation:1.1.0"
+        implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
     }
 }
 
